@@ -1,75 +1,78 @@
-# Nuxt Minimal Starter
+# Getting started
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Download the files
 
-## Setup
+1. Click the `Code` button in the top right of [the repository page](https://github.com/Layton-Burchell-Tillo/adam-tillo-internship-frontend-work) and select "Download ZIP".
+2. Right-click the downloaded file and select "Extract Archive" or equivalent.
 
-Make sure to install dependencies:
+## Download a program for using the files
 
-```bash
-# npm
-npm install
+Generally the easiest editor to get started with is [VSCode](https://code.visualstudio.com/). Download it and get it installed.
 
-# pnpm
-pnpm install
+After it is installed:
+1. Open VSCode
+2. In the top-left, select `File > Open Folder`
+3. Select the folder you extracted the archive into (see Download the Files step 2)
 
-# yarn
-yarn install
+## Download Node and PNPM to run the files
 
-# bun
-bun install
-```
+### Windows
 
-## Development Server
+As per the instructions on [the Node js website](https://nodejs.org/en/download) for installing LTS + Windows + Chocolatey + PNPM, you'll need [Chocolatey](https://chocolatey.org/install) which is a windows package manager.
 
-Start the development server on `http://localhost:3000`:
+#### Installing Chocolatey
 
-```bash
-# npm
-npm run dev
+1. You need to run some Powershell terminal commands as Admin. To open Powershell as admin: Hold the Win key, then press X, then press A and accept the admin warning
+2. As per [the Node site](https://nodejs.org/en/download) copy/paste this code into Powershell and run it
+    ```
+    # Download and install Chocolatey:
+    powershell -c "irm https://community.chocolatey.org/install.ps1|iex"
 
-# pnpm
-pnpm dev
+    # Download and install Node.js:
+    choco install nodejs --version="24.16.0"
 
-# yarn
-yarn dev
+    # Verify the Node.js version:
+    node -v # Should print "v24.16.0".
 
-# bun
-bun run dev
-```
+    # Download and install pnpm:
+    corepack enable pnpm
 
-## Production
+    # Verify pnpm version:
+    pnpm -v
+    ```
 
-Build the application for production:
+If a number came out at the end, that worked! If not, something went wrong and I'll need details to help with it. If that happens, go to the Issues tab of github and create an issue explaining as much as possible (but make sure you don't include any personal info!)
 
-```bash
-# npm
-npm run build
+### Mac
 
-# pnpm
-pnpm build
+1. As per [the Node site](https://nodejs.org/en/download) copy/paste this code into Powershell and run it
+    ```
+    # Download and install Chocolatey:
+    powershell -c "irm https://community.chocolatey.org/install.ps1|iex"
 
-# yarn
-yarn build
+    # Download and install Node.js:
+    choco install nodejs --version="24.16.0"
 
-# bun
-bun run build
-```
+    # Verify the Node.js version:
+    node -v # Should print "v24.16.0".
 
-Locally preview production build:
+    # Download and install pnpm:
+    corepack enable pnpm
 
-```bash
-# npm
-npm run preview
+    # Verify pnpm version:
+    pnpm -v
+    ```
 
-# pnpm
-pnpm preview
+If a number came out at the end, that worked! If not, something went wrong and I'll need details to help with it. If that happens, go to the Issues tab of github and create an issue explaining as much as possible (but make sure you don't include any personal info!)
 
-# yarn
-yarn preview
+## Running the project
 
-# bun
-bun run preview
-```
+1. Back in VSCode, open a new terminal. Do this by selecting `Terminal > New terminal` in the top-left of the editor
+2. In the terminal, enter `pnpm install`
+3. In the terminal, enter `pnpm dev`
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+This should run the server!
+
+You can see the output by going to http://localhost:3000
+
+Best of luck, and happy coding! 👾
