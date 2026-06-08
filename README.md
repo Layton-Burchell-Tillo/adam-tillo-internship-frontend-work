@@ -76,3 +76,9 @@ This should run the server!
 You can see the output by going to http://localhost:3000
 
 Best of luck, and happy coding! 👾
+
+# Screenshots
+
+## Brand cards horizontally tiled
+
+![Brand cards horizontally tiled](/readme-assets/0.png)
